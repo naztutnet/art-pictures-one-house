@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Инициативный интерактивный прототип единого цифрового дома Art Pictures Studio, Vision и Motion.">
-  <title>Art Pictures — One House</title>
+  <meta name="description" content="Инициативный прототип редизайна сайта Art Pictures — Studio, Vision и Motion.">
+  <title>Art Pictures — Studio, Vision, Motion</title>
   <style>
-:root { --ink:#0a0a0a; --paper:#f0eee8; --soft:#d7d1c5; --signal:#f05223; --line:rgba(10,10,10,.18); }
+:root { --ink:#080808; --paper:#f4f4f2; --soft:#deded9; --signal:#f04b23; --line:rgba(8,8,8,.18); }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; background:var(--ink); }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
@@ -28,7 +28,7 @@ button { font:inherit; cursor:pointer; }
 .hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,#090909 0%,#090909 39%,rgba(9,9,9,.74) 57%,rgba(9,9,9,.18) 100%),linear-gradient(0deg,rgba(0,0,0,.55),transparent 50%); }
 .hero-copy { position:relative; z-index:2; padding:148px 7vw 90px; width:min(760px,63vw); }
 .eyebrow,.section-index { margin:0; color:var(--signal); font-size:12px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
-.hero h1 { margin:24px 0 26px; font-size:clamp(62px,8.7vw,138px); line-height:.82; letter-spacing:-.075em; text-transform:uppercase; }
+.hero h1 { margin:24px 0 26px; font-size:clamp(72px,10vw,156px); line-height:.78; letter-spacing:-.075em; text-transform:uppercase; }
 .hero h1 em,footer h2 em { color:var(--signal); font-family:Georgia,'Times New Roman',serif; font-weight:400; text-transform:none; }
 .hero-lede { width:min(470px,90%); margin:0 0 34px; color:rgba(255,255,255,.72); font-size:19px; line-height:1.48; }
 .reel-button { border-radius:0!important; background:var(--signal)!important; height:54px; padding:0 24px!important; color:#fff!important; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
@@ -43,11 +43,9 @@ button { font:inherit; cursor:pointer; }
 .reel-placeholder span { color:#777; font-size:11px; }
 
 .section-pad { padding:112px 5vw; }
-.manifesto { display:grid; grid-template-columns:1fr 3fr; gap:6vw; border-bottom:1px solid var(--line); }
-.manifesto-text { max-width:1040px; margin:0; font-size:clamp(34px,5vw,76px); line-height:1.03; letter-spacing:-.045em; }
-.manifesto-text em { color:var(--signal); font-family:Georgia,'Times New Roman',serif; font-weight:400; }
 .section-heading { display:grid; grid-template-columns:1fr 3fr; gap:6vw; align-items:start; margin-bottom:72px; }
 .section-heading h2 { margin:-10px 0 0; font-size:clamp(48px,7vw,110px); line-height:.88; letter-spacing:-.065em; text-transform:uppercase; }
+.compact-heading h2 { font-size:clamp(42px,6vw,92px); white-space:nowrap; }
 
 .companies { background:var(--signal); }
 .companies .section-index { color:var(--ink); }
@@ -98,20 +96,11 @@ button { font:inherit; cursor:pointer; }
 .project-info h3 { margin:0; font-size:clamp(22px,2.4vw,38px); line-height:1; letter-spacing:-.035em; }
 .project-info>span { font-size:11px; font-weight:800; text-transform:uppercase; white-space:nowrap; }
 
-.proof { background:var(--ink); color:#fff; }
-.proof-line { display:grid; grid-template-columns:1fr 3fr; gap:6vw; padding-bottom:58px; border-bottom:1px solid #3d3d3d; }
-.proof-line>p:last-child { margin:0; font-size:clamp(36px,5.6vw,84px); line-height:.98; letter-spacing:-.05em; }
-.numbers { display:grid; grid-template-columns:repeat(3,1fr); border-bottom:1px solid #3d3d3d; }
-.numbers div { min-height:250px; padding:42px 24px 34px 0; border-right:1px solid #3d3d3d; display:flex; flex-direction:column; justify-content:space-between; }
-.numbers div:not(:first-child) { padding-left:28px; }
-.numbers div:last-child { border-right:0; }
-.numbers strong { color:var(--signal); font-size:clamp(70px,10vw,150px); line-height:.75; letter-spacing:-.08em; }
-.numbers span { color:#aaa; font-size:12px; text-transform:uppercase; letter-spacing:.09em; }
-.founder-row { display:grid; grid-template-columns:160px 1.5fr 1fr; gap:32px; align-items:center; padding:70px 0 34px; }
-.founder-monogram { display:grid; place-items:center; width:130px; aspect-ratio:1; border-radius:50%; background:var(--signal); color:var(--ink); font-family:Georgia,serif; font-size:50px; }
-.founder-row h2 { margin:0; font-size:clamp(42px,6vw,92px); line-height:.9; letter-spacing:-.06em; }
-.founder-row>p { color:#aaa; font-size:16px; line-height:1.55; }
-.verification-note { margin:34px 0 0 192px; color:#666; font-size:11px; }
+.about { background:var(--ink); color:#fff; display:grid; grid-template-columns:1fr 2fr 1fr; gap:6vw; align-items:start; }
+.about-copy h2 { margin:-12px 0 34px; color:var(--signal); font-size:clamp(58px,8vw,126px); line-height:.85; letter-spacing:-.07em; text-transform:uppercase; }
+.about-copy p { max-width:760px; margin:0; color:#d6d6d6; font-size:clamp(25px,3.1vw,48px); line-height:1.08; letter-spacing:-.035em; }
+.about-directions { display:flex; flex-direction:column; border-top:1px solid #414141; }
+.about-directions span { padding:18px 0; border-bottom:1px solid #414141; color:#aaa; font-size:12px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
 
 .news { background:var(--soft); }
 .news-list { border-top:2px solid var(--ink); }
@@ -142,10 +131,10 @@ footer h2 { margin:38px 0; font-size:clamp(60px,9vw,140px); line-height:.83; let
   .hero-side-note { display:none; }
   .scroll-cue { right:22px; }
   .section-pad { padding:82px 22px; }
-  .manifesto,.section-heading,.proof-line { grid-template-columns:1fr; }
-  .manifesto-text { font-size:clamp(32px,9vw,54px); }
+  .section-heading { grid-template-columns:1fr; }
   .section-heading { gap:32px; margin-bottom:46px; }
   .section-heading h2 { margin:0; font-size:clamp(48px,14vw,82px); }
+  .compact-heading h2 { font-size:clamp(34px,9.5vw,62px); white-space:normal; }
   .division-list { grid-template-columns:1fr; }
   .division-trigger { height:88px!important; border-right:0!important; border-bottom:1px solid rgba(10,10,10,.35)!important; }
   .division-trigger small { grid-column:2; }
@@ -159,12 +148,8 @@ footer h2 { margin:38px 0; font-size:clamp(60px,9vw,140px); line-height:.83; let
   .project-card { margin-bottom:12px; }
   .project-art { aspect-ratio:16/10; }
   .project-art b { font-size:42vw; }
-  .numbers { grid-template-columns:1fr; }
-  .numbers div { min-height:180px; border-right:0; border-bottom:1px solid #3d3d3d; padding:36px 0!important; }
-  .founder-row { grid-template-columns:90px 1fr; }
-  .founder-monogram { width:76px; font-size:30px; }
-  .founder-row>p { grid-column:1/-1; }
-  .verification-note { margin-left:0; }
+  .about { grid-template-columns:1fr; }
+  .about-copy h2 { margin:0 0 26px; }
   .news-list article { grid-template-columns:1fr auto; }
   .news-list h3 { grid-column:1/-1; grid-row:2; }
   footer { grid-template-columns:1fr; min-height:88svh; padding:88px 22px 26px; }
@@ -187,7 +172,7 @@ footer h2 { margin:38px 0; font-size:clamp(60px,9vw,140px); line-height:.83; let
 <body>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Art Pictures — наверх"><span class="brand-mark">AP</span><span>ART PICTURES</span></a>
-    <nav class="desktop-nav" aria-label="Основная навигация"><a href="#projects">Проекты</a><a href="#companies">Компании</a><a href="#people">Люди</a><a href="#news">Новости</a></nav>
+    <nav class="desktop-nav" aria-label="Основная навигация"><a href="#companies">Направления</a><a href="#projects">Проекты</a><a href="#about">О компании</a><a href="#news">Новости</a></nav>
     <div class="header-meta"><span>RU</span><a href="#contacts">Контакты ↗</a></div>
   </header>
 
@@ -195,33 +180,31 @@ footer h2 { margin:38px 0; font-size:clamp(60px,9vw,140px); line-height:.83; let
     <section class="hero" id="top">
       <div class="hero-image" aria-hidden="true"></div><div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-copy">
-        <p class="eyebrow">One house · Three disciplines</p>
-        <h1>Истории<br>для любого<br><em>экрана.</em></h1>
-        <p class="hero-lede">Единый дом кино, сериалов и коммуникаций. Три самостоятельные команды — одна репутация.</p>
+        <p class="eyebrow">КИНО · СЕРИАЛЫ · КОММУНИКАЦИИ</p>
+        <h1>ART<br><em>PICTURES</em></h1>
+        <p class="hero-lede">Studio, Vision и Motion — три направления Art Pictures</p>
         <button class="reel-button" type="button" data-open-reel><span class="play">▶</span> Смотреть showreel</button>
       </div>
-      <div class="hero-side-note"><span>CONCEPT<br>PROTOTYPE</span><span>2026</span></div>
+      <div class="hero-side-note"><span>STUDIO<br>VISION<br>MOTION</span><span>MOSCOW</span></div>
       <a class="scroll-cue" href="#companies">Листать ↓</a>
     </section>
 
-    <section class="manifesto section-pad"><p class="section-index">00 / POSITION</p><p class="manifesto-text">Art Pictures — не три сайта под одним логотипом. Это <em>единая производственная экосистема</em>, где идея становится фильмом, сериалом и разговором со зрителем.</p></section>
-
     <section class="companies section-pad" id="companies">
-      <div class="section-heading"><p class="section-index">01 / COMPANIES</p><h2>Три дисциплины.<br>Один стандарт.</h2></div>
+      <div class="section-heading compact-heading"><p class="section-index">01 / НАПРАВЛЕНИЯ</p><h2>STUDIO / VISION / MOTION</h2></div>
       <div class="division-tabs">
         <div class="division-list" role="tablist" aria-label="Направления Art Pictures">
           <button class="division-trigger" role="tab" aria-selected="true" data-division="studio"><span>01</span><strong>Studio</strong><small>Полнометражное кино</small></button>
           <button class="division-trigger" role="tab" aria-selected="false" data-division="vision"><span>02</span><strong>Vision</strong><small>Сериалы и телефильмы</small></button>
           <button class="division-trigger" role="tab" aria-selected="false" data-division="motion"><span>03</span><strong>Motion</strong><small>Коммуникации и промо</small></button>
         </div>
-        <div class="division-panel" data-panel="studio"><div class="division-content"><p class="division-number">01</p><div><p class="division-label">ART PICTURES STUDIO</p><h3>Истории, которые становятся частью массовой культуры.</h3></div><div class="division-detail"><p>Разработка и производство полнометражных фильмов — от первой идеи до большого экрана.</p><span>Большая фильмография · награды · международная дистрибуция</span><a href="#projects">Смотреть проекты →</a></div></div></div>
-        <div class="division-panel" data-panel="vision" hidden><div class="division-content"><p class="division-number">02</p><div><p class="division-label">ART PICTURES VISION</p><h3>Истории, которые живут вместе со зрителем.</h3></div><div class="division-detail"><p>Серийное производство для телеканалов и платформ с собственной командой и производственной экспертизой.</p><span>Разработка · производство · постпродакшн</span><a href="#projects">Смотреть проекты →</a></div></div></div>
-        <div class="division-panel" data-panel="motion" hidden><div class="division-content"><p class="division-number">03</p><div><p class="division-label">ART PICTURES MOTION</p><h3>Истории, которые находят свою аудиторию.</h3></div><div class="division-detail"><p>Креативные и коммуникационные решения вокруг кино, сериалов и entertainment‑брендов.</p><span>Стратегия · креатив · производство контента</span><a href="#projects">Смотреть проекты →</a></div></div></div>
+        <div class="division-panel" data-panel="studio"><div class="division-content"><p class="division-number">01</p><div><p class="division-label">ART PICTURES STUDIO</p><h3>Большое кино для большого экрана</h3></div><div class="division-detail"><p>Разработка и производство полнометражных фильмов — от первой идеи до большого экрана.</p><span>Разработка · производство · дистрибуция</span><a href="#projects">Смотреть проекты →</a></div></div></div>
+        <div class="division-panel" data-panel="vision" hidden><div class="division-content"><p class="division-number">02</p><div><p class="division-label">ART PICTURES VISION</p><h3>Сериалы и телефильмы для телеканалов и платформ</h3></div><div class="division-detail"><p>Серийное производство для телеканалов и платформ с собственной командой и производственной экспертизой.</p><span>Разработка · производство · постпродакшн</span><a href="#projects">Смотреть проекты →</a></div></div></div>
+        <div class="division-panel" data-panel="motion" hidden><div class="division-content"><p class="division-number">03</p><div><p class="division-label">ART PICTURES MOTION</p><h3>Коммуникации вокруг кино и entertainment</h3></div><div class="division-detail"><p>Креативные и коммуникационные решения вокруг кино, сериалов и entertainment‑брендов.</p><span>Стратегия · креатив · производство контента</span><a href="#projects">Смотреть проекты →</a></div></div></div>
       </div>
     </section>
 
     <section class="projects section-pad" id="projects">
-      <div class="section-heading project-heading"><div><p class="section-index">02 / SELECTED WORK</p><h2>Сначала работа.</h2></div><p class="section-note">Демонстрационная выборка. Состав, статусы и производственные связи проектов требуют редакционной проверки.</p></div>
+      <div class="section-heading project-heading"><div><p class="section-index">02 / ПРОЕКТЫ</p><h2>Избранные проекты</h2></div><p class="section-note">Демонстрационная выборка. Состав, статусы и производственные связи проектов требуют редакционной проверки.</p></div>
       <div class="filters" role="group" aria-label="Фильтр проектов">
         <button class="filter active" data-filter="Все">Все</button><button class="filter" data-filter="Кино">Кино</button><button class="filter" data-filter="Сериал">Сериал</button><button class="filter" data-filter="Коммуникации">Коммуникации</button>
       </div>
@@ -235,23 +218,22 @@ footer h2 { margin:38px 0; font-size:clamp(60px,9vw,140px); line-height:.83; let
       </div>
     </section>
 
-    <section class="proof section-pad" id="people">
-      <div class="proof-line"><p class="section-index">03 / CREDIBILITY</p><p>Не биография одного человека —<br>доказательство силы всей команды.</p></div>
-      <div class="numbers"><div><strong>50+</strong><span>фильмов</span></div><div><strong>55+</strong><span>профессиональных наград</span></div><div><strong>100+</strong><span>стран дистрибуции</span></div></div>
-      <div class="founder-row"><div class="founder-monogram">ФБ</div><div><p class="division-label">ОСНОВАТЕЛЬ · РЕЖИССЁР · ПРОДЮСЕР</p><h2>Фёдор Бондарчук</h2></div><p>Публичная фигура усиливает доверие к бренду, но центральный герой сайта — созданные проекты и люди, которые делают их возможными.</p></div>
-      <p class="verification-note">Цифры взяты с текущего сайта Studio и перед публикацией должны быть подтверждены ответственным редактором.</p>
+    <section class="about section-pad" id="about">
+      <p class="section-index">03 / О КОМПАНИИ</p>
+      <div class="about-copy"><h2>Art Pictures</h2><p>Производство полнометражного кино, сериалов и телефильмов, а также коммуникационных проектов</p></div>
+      <div class="about-directions"><span>Studio</span><span>Vision</span><span>Motion</span></div>
     </section>
 
     <section class="news section-pad" id="news">
-      <div class="section-heading"><p class="section-index">04 / CURRENT</p><h2>Сейчас<br>в Art Pictures.</h2></div>
-      <div class="news-list"><article><span>Премьера</span><h3>Большая история начинается с одного точного кадра.</h3><time>30.08.2026</time></article><article><span>Производство</span><h3>Новый проект Vision: статус, команда и подтверждённые факты — в одном месте.</h3><time>В работе</time></article><article><span>Пресса</span><h3>Прямые ссылки на публикации вместо пересказов и устаревающих подборок.</h3><time>Архив</time></article></div>
+      <div class="section-heading"><p class="section-index">04 / НОВОСТИ</p><h2>Новости Art Pictures</h2></div>
+      <div class="news-list"><article><span>Премьера</span><h3>Большая история начинается с одного точного кадра</h3><time>30.08.2026</time></article><article><span>Производство</span><h3>Новый проект Vision</h3><time>В работе</time></article><article><span>Пресса</span><h3>Публикации и материалы о проектах</h3><time>Архив</time></article></div>
     </section>
   </main>
 
-  <footer id="contacts"><div><p class="eyebrow">ART PICTURES · MOSCOW</p><h2>Давайте делать<br><em>сильные истории.</em></h2></div><div class="footer-links"><a href="https://art-pictures.ru/" target="_blank" rel="noreferrer">Текущий сайт ↗</a><a href="#top">Наверх ↑</a><p>Инициативный прототип.<br>Не является утверждённым дизайном.</p></div><p class="footer-bottom">ART PICTURES — ONE HOUSE / CONCEPT STUDY / 2026</p></footer>
+  <footer id="contacts"><div><p class="eyebrow">ART PICTURES · MOSCOW</p><h2>Связаться с<br><em>Art Pictures</em></h2></div><div class="footer-links"><a href="https://art-pictures.ru/" target="_blank" rel="noreferrer">Текущий сайт ↗</a><a href="#top">Наверх ↑</a><p>Инициативный прототип.<br>Не является утверждённым дизайном.</p></div><p class="footer-bottom">ART PICTURES / REDESIGN PROTOTYPE / 2026</p></footer>
 
   <div class="modal" data-reel-modal hidden role="dialog" aria-modal="true" aria-labelledby="reel-title">
-    <div class="modal-panel"><button class="modal-close" type="button" aria-label="Закрыть" data-close-reel>×</button><h2 id="reel-title">SHOWREEL · ART PICTURES</h2><p>В прототипе здесь открывается общий 60–90‑секундный showreel группы. Финальный монтаж и права на материалы согласовываются отдельно.</p><div class="reel-placeholder"><span>00:00</span><strong>ONE HOUSE<br>THREE DISCIPLINES</strong><span>01:15</span></div></div>
+    <div class="modal-panel"><button class="modal-close" type="button" aria-label="Закрыть" data-close-reel>×</button><h2 id="reel-title">SHOWREEL · ART PICTURES</h2><p>В прототипе здесь открывается общий showreel Art Pictures. Финальный монтаж и права на материалы согласовываются отдельно.</p><div class="reel-placeholder"><span>00:00</span><strong>ART PICTURES<br>SHOWREEL</strong><span>01:15</span></div></div>
   </div>
   <script>
 const tabButtons = [...document.querySelectorAll('[data-division]')];
